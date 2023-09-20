@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<style>
+    table, td, th
+    {
+        border: 1px solid black;
+    }
+</style>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendszám</title>
+</head>
+<body>
+    <div id="content">
+        <p>Rendszám: <input type="text" id="rsz"></p>
+        <select id="uztip">
+            <option value="0">Benzin</option>
+            <option value="1">Disel</option>
+            <option value="2">Elektromos</option>
+        </select>
+        <p><input type="checkbox" id="elso"> Első tulajdonos</p>
+        <p><input type="radio" name="ajto" value="harom"> Három ajtós</p>
+        <p><input type="radio" name="ajto" value="ot" checked> Öt ajtós</p>
+
+
+        <button onclick="Tarol()">Tárol</button>
+        <button onclick="Statisztika()">Statisztika</button>
+    </div>
+
+    <div id="content2">
+        <table>
+            <tr>
+                <th rowspan="2">Üzemanyag szerint</th>
+                <th>Benzin</th>
+                <th>Disel</th>
+                <th>Elektromos</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Első tulajdonosok százalékos aránya</th>
+                <td colspan="3">1</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Rendszámok megoszlása</th>
+                <th colspan="2">Régi rendszám</th>
+                <th>Új rendszám</th>
+            </tr>
+            <tr>
+                <td colspan="2">1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Melyik a népszerűbb</th>
+                <td colspan="3">1</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>
+<script src="main.js"></script>
