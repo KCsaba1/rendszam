@@ -4,6 +4,11 @@
     {
         border: 1px solid black;
     }
+    td
+    {
+        color: rgb(102, 102, 255);
+        text-align: center;
+    }
 </style>
 <html lang="hu">
 <head>
@@ -16,12 +21,12 @@
     <div id="content">
         <p>Rendszám: <input type="text" id="rsz"></p>
         <select id="uztip">
-            <option value="0">Benzin</option>
-            <option value="1">Disel</option>
-            <option value="2">Elektromos</option>
+            <option value="benzin">Benzin</option>
+            <option value="disel">Disel</option>
+            <option value="elektromos">Elektromos</option>
         </select>
         <p><input type="checkbox" id="elso"> Első tulajdonos</p>
-        <p><input type="radio" name="ajto" value="harom"> Három ajtós</p>
+        <p><input type="radio" name="ajto" value="harom" id="harom"> Három ajtós</p>
         <p><input type="radio" name="ajto" value="ot" checked> Öt ajtós</p>
 
 
@@ -38,13 +43,13 @@
                 <th>Elektromos</th>
             </tr>
             <tr>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
+                <td id="benzin">0</td>
+                <td id="disel">0</td>
+                <td id="elektromos">0</td>
             </tr>
             <tr>
                 <th>Első tulajdonosok százalékos aránya</th>
-                <td colspan="3">1</td>
+                <td colspan="3" id="tulaj">0%</td>
             </tr>
             <tr>
                 <th rowspan="2">Rendszámok megoszlása</th>
@@ -52,12 +57,12 @@
                 <th>Új rendszám</th>
             </tr>
             <tr>
-                <td colspan="2">1</td>
-                <td>1</td>
+                <td colspan="2" id="regi">0</td>
+                <td id="uj">0</td>
             </tr>
             <tr>
                 <th>Melyik a népszerűbb</th>
-                <td colspan="3">1</td>
+                <td colspan="3" id="nepszerubb">Egyforma</td>
             </tr>
         </table>
     </div>
